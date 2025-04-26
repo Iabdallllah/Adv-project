@@ -11,7 +11,6 @@ public class Book {
         this.isAvailable = true;
     }
 
-    // Getters and setters
     public String getTitle() {
         return title;
     }

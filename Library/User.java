@@ -16,6 +16,5 @@ public abstract class User {
         return userID;
     }
 
-    // Abstract method to be implemented by subclasses
     public abstract void displayInfo();
 }

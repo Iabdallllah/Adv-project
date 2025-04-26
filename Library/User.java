@@ -7,7 +7,6 @@ public abstract class User {
         this.userID = userID;
     }
 
-    // Getters
     public String getName() {
         return name;
     }

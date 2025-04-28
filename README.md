@@ -1,4 +1,4 @@
-Contributors:
+#Contributors:
 Abdallah Ahmed
 Yousef Ibrahim
 Fahmy Ibrahim
@@ -7,7 +7,7 @@ Manar Mohamed
 Hana Farid
 Nour Mahmoud
 
-📚 Library System
+#📚 Library System
 
 A simple Java-based Library Management System that allows adding, removing, searching, and sorting books, along with managing library members.
 

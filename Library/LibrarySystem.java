@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class LibrarySystem {
-    private ArrayList<Book> books;
+    private ArrayList<Book> books; 
     private ArrayList<Member> members;
 
     public LibrarySystem() {
@@ -22,10 +22,10 @@ public class LibrarySystem {
         if (!book.isAvailable()) {
             throw new Exception("Cannot remove a book that is currently borrowed");
         }
-        books.remove(book);
+        books.remove(book); // Remove book from the library
     }
 
-    public void addMember(Member member) {
+    public void addMember(Member member) { 
         members.add(member);
     }
 
@@ -35,12 +35,12 @@ public class LibrarySystem {
                 return book;
             }
         }
-        return null;
+        return null; // Book not found
     }
 
     public void sortBooksByTitle() {
         Collections.sort(books, new Comparator<Book>() {
-            @Override
+            @Override //override the compare method to sort books by title
             public int compare(Book b1, Book b2) {
                 return b1.getTitle().compareToIgnoreCase(b2.getTitle());
             }

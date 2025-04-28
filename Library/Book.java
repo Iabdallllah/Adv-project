@@ -11,6 +11,7 @@ public class Book {
         this.isAvailable = true;
     }
 
+    // Getters and setters
     public String getTitle() {
         return title;
     }
@@ -30,8 +31,8 @@ public class Book {
     public void setAvailable(boolean available) {
         isAvailable = available;
     }
-
-    @Override
+// Override toString method to display book details
+    @Override 
     public String toString() {
         return "Title: " + title + ", Author: " + author + ", ID: " + bookID + 
                ", Available: " + (isAvailable ? "Yes" : "No");

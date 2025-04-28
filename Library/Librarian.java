@@ -6,7 +6,7 @@ public class Librarian extends User {
     }
 
     public void addBook(ArrayList<Book> books, Book newBook) {
-        books.add(newBook);
+        books.add(newBook); // Add new book to the library
     }
 
     public void removeBook(ArrayList<Book> books, Book bookToRemove) throws Exception {
@@ -16,10 +16,10 @@ public class Librarian extends User {
         if (!bookToRemove.isAvailable()) {
             throw new Exception("Cannot remove a book that is borrowed");
         }
-        books.remove(bookToRemove);
+        books.remove(bookToRemove); // Remove book from the library
     }
-
-    @Override
+    // Override the displayInfo method to show librarian details
+    @Override 
     public void displayInfo() {
         System.out.println("Librarian Name: " + getName() + ", ID: " + getUserID());
     }

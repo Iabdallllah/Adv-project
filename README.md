@@ -1,96 +1,78 @@
-#Contributors:
-Abdallah Ahmed
-Yousef Ibrahim
-Fahmy Ibrahim
-Mariam Hussien
-Manar Mohamed
-Hana Farid
-Nour Mahmoud
+# 📚 Library System
 
-#📚 Library System
+## 👥 Contributors
+- Abdallah Ahmed
+- Yousef Ibrahim
+- Fahmy Ibrahim
+- Mariam Hussien
+- Manar Mohamed
+- Hana Farid
+- Nour Mahmoud
 
+---
+
+## 📝 Project Overview
 A simple Java-based Library Management System that allows adding, removing, searching, and sorting books, along with managing library members.
 
-📋 Features
+---
 
-Add new books to the library.
+## 📋 Features
+- Add new books to the library.
+- Remove books (only if available).
+- Add new members.
+- Search for books by title (case-insensitive).
+- Sort books alphabetically by title.
+- Exception handling for invalid operations.
 
-Remove books (only if available).
+---
 
-Add new members.
+## 🛠️ Technologies Used
+- Java (Core Java Concepts)
+- Collections Framework (ArrayList, Collections.sort)
+- Exception Handling
+- OOP Concepts (Classes, Objects, Methods)
 
-Search for books by title (case-insensitive).
+---
 
-Sort books alphabetically by title.
+## 🏛️ Class Structure
 
-Exception handling for invalid operations.
+### 📚 LibrarySystem
+**Manages the collection of Book and Member objects.**
 
-🛠️ Technologies Used
+**Methods:**
+- `addBook(Book book)`
+- `removeBook(Book book)`
+- `addMember(Member member)`
+- `searchBook(String title)`
+- `sortBooksByTitle()`
+- `getBooks()`
+- `getMembers()`
 
-Java (Core Java Concepts)
+---
 
-Collections Framework (ArrayList, Collections.sort)
+### 📖 Book
+_(Assumed structure)_
 
-Exception Handling
+**Attributes:**
+- `String title`
+- `String author`
+- `boolean available`
 
-OOP Concepts (Classes, Objects, Methods)
+**Methods:**
+- `getTitle()`
+- `isAvailable()`
+- Other getters/setters
 
-🏛️ Class Structure
+---
 
-LibrarySystem
-Manages the collection of Book and Member objects.
+### 🧑 Member
+_(Assumed structure)_
 
-Methods:
+**Attributes:**
+- `String name`
+- `int memberId`
 
-addBook(Book book)
-
-removeBook(Book book)
-
-addMember(Member member)
-
-searchBook(String title)
-
-sortBooksByTitle()
-
-getBooks()
-
-getMembers()
-
-Book
-(Assumed structure)
-
-Attributes:
-
-String title
-
-String author
-
-boolean available
-
-Methods:
-
-getTitle()
-
-isAvailable()
-
-Other getters/setters
-
-Member
-(Assumed structure)
-
-Attributes:
-
-String name
-
-int memberId
-
-Methods:
-
-getName()
-
-getMemberId()
-
-Other getters/setters
-
-
-
+**Methods:**
+- `getName()`
+- `getMemberId()`
+- Other getters/setters

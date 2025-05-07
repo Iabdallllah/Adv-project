@@ -29,23 +29,6 @@ public class LibrarySystem {
         members.add(member);
     }
 
-    public Book searchBook(String title) {
-        for (Book book : books) {
-            if (book.getTitle().equalsIgnoreCase(title)) {
-                return book;
-            }
-        }
-        return null; // Book not found
-    }
-
-    public void sortBooksByTitle() {
-        Collections.sort(books, new Comparator<Book>() {
-            @Override //override the compare method to sort books by title
-            public int compare(Book b1, Book b2) {
-                return b1.getTitle().compareToIgnoreCase(b2.getTitle());
-            }
-        });
-    }
 
     public ArrayList<Book> getBooks() {
         return books;
